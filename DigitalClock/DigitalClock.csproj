@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Clock.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Clock.ico" />
+    <None Remove="Fonts\DIGITAL.TXT" />
+    <None Remove="Fonts\DS-DIGIB.TTF" />
+    <None Remove="Fonts\DS-DIGII.TTF" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Clock.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Clock.ico" />
+    <Resource Include="Fonts\DIGITAL.TXT" />
+    <Resource Include="Fonts\DS-DIGIB.TTF" />
+    <Resource Include="Fonts\DS-DIGII.TTF" />
+  </ItemGroup>
+
+</Project>
