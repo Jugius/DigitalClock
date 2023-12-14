@@ -37,11 +37,11 @@
     </Window.Resources>
     <StackPanel Orientation="Vertical" Margin="30,50">
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock  Text="{Binding Time}" d:Text="22:22"  FontSize="72pt"  />
-            <TextBlock MinWidth="50" Margin="10" Text="{Binding Seconds}" d:Text="22"  FontSize="30pt"
+            <TextBlock  Text="{Binding Time}" FontSize="72pt"  />
+            <TextBlock MinWidth="50" Margin="10" Text="{Binding Seconds}" FontSize="30pt"
                        Visibility="{Binding ShowSeconds, Converter={StaticResource boolToVisibilityConverter}}"/>
         </WrapPanel>
-        <TextBlock Text="{Binding Date}" d:Text="14 DEC 2023" FontSize="40pt" />
-        <TextBlock Text="{Binding WeekDay}" d:Text="THURSDAY" FontSize="30pt" />
+        <TextBlock Text="{Binding Date}"  FontSize="40pt" />
+        <TextBlock Text="{Binding WeekDay}" FontSize="30pt" />
     </StackPanel>
 </Window>

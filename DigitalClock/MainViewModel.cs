@@ -38,8 +38,6 @@ public class MainViewModel : INotifyPropertyChanged
         ExitApplication = new ExitApplicationCommand();
         InvertShowSeconds = new InvertShowSecondsCommand(this);
         InvertWindowIsTopmost = new InvertWindowIsTopmostCommand(this);
-
-        _timer.Start();
     }
 
     private void OnTimer_Elapsed(object? sender, System.Timers.ElapsedEventArgs e)
@@ -65,6 +63,7 @@ public class MainViewModel : INotifyPropertyChanged
         OnPropertyChanged(nameof(Date));
         OnPropertyChanged(nameof(WeekDay));
     }
+    public void StartTimer() => _timer.Start();
 
     public ExitApplicationCommand ExitApplication { get; }
     public InvertShowSecondsCommand InvertShowSeconds { get; }
